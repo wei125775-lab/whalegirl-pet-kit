@@ -1,0 +1,132 @@
+{
+  "version": 3,
+  "id": "whalegirl",
+  "name": "鲸鱼娘",
+  "style": "illustration",
+  "cellWidth": 436,
+  "cellHeight": 640,
+  "bubbles": [
+    "咕噜咕噜～",
+    "要摸摸头吗？",
+    "今天也想陪着你。",
+    "尾巴甩甩～",
+    "休息一下好不好？"
+  ],
+  "identity": {
+    "species": "鲸鱼娘",
+    "appearance": {
+      "发色": "深蓝渐变浅蓝",
+      "装束": "深蓝女仆装 + 白蕾丝围裙",
+      "特征": "鲸鱼尾鳍、白色蕾丝头饰"
+    }
+  },
+  "temperament": {
+    "activity": 0.45,
+    "clinginess": 0.7,
+    "curiosity": 0.6,
+    "independence": 0.35
+  },
+  "actions": {
+    "idle": {
+      "sprite": "idle/idle_sheet.png",
+      "frames": 24,
+      "fps": 12,
+      "loop": true,
+      "weight": 100,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "待机",
+      "diary": {
+        "mood": "安逸",
+        "text": "{name}安静地待着，长发和尾巴轻轻晃。"
+      }
+    },
+    "eat": {
+      "sprite": "eat/eat_sheet.png",
+      "frames": 13,
+      "fps": 12,
+      "loop": true,
+      "pingpong": true,
+      "weight": 0,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "吃饭",
+      "diary": {
+        "mood": "满足",
+        "text": "{name}捧着饭碗，一口一口吃着。"
+      }
+    },
+    "putaway": {
+      "sprite": "putaway/putaway_sheet.png",
+      "frames": 9,
+      "fps": 8,
+      "loop": false,
+      "weight": 0,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "收碗",
+      "diary": {
+        "mood": "满足",
+        "text": "{name}吃饱了，把碗收了起来。"
+      },
+      "transitions": {
+        "touchface": 60,
+        "idle": 40
+      }
+    },
+    "wave": {
+      "sprite": "wave/wave_sheet.png",
+      "frames": 30,
+      "fps": 12,
+      "loop": false,
+      "weight": 0,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "打招呼",
+      "diary": {
+        "mood": "开心",
+        "text": "{name}举起手跟你打招呼。"
+      },
+      "transitions": {
+        "idle": 100
+      }
+    },
+    "heart": {
+      "sprite": "heart/heart_sheet.png",
+      "frames": 30,
+      "fps": 12,
+      "loop": false,
+      "weight": 0,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "比心",
+      "diary": {
+        "mood": "害羞",
+        "text": "{name}比了个心，胸口冒出一颗小小的红心。"
+      },
+      "transitions": {
+        "idle": 100
+      }
+    },
+    "touchface": {
+      "sprite": "touchface/touchface_sheet.png",
+      "frames": 30,
+      "fps": 12,
+      "loop": true,
+      "weight": 0,
+      "frameWidth": 436,
+      "frameHeight": 640,
+      "scale": 0.4,
+      "label": "托腮",
+      "diary": {
+        "mood": "好奇",
+        "text": "{name}双手托着腮，不知道在想什么。"
+      }
+    }
+  }
+}
