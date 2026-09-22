@@ -48,9 +48,17 @@ def fit(ref, src, iters=4):
 
 
 def apply_coef(rgba, coef):
+    """只动不透明像素。
+
+    系数是从主体（alpha > 220）上拟合的，套到透明像素上没有意义：alpha=0 的地方本来
+    是 0，一乘一加就成了常数 b，把整片背景写成 b。之后渲染走非预乘插值，缩放时这层
+    底会被混进角色边缘，深色底上看就是一圈灰白描边。alpha 本身不动。
+    """
     out = rgba.copy()
+    m = rgba[:, :, 3] > 0
     for c, (a, b, _) in enumerate(coef):
-        out[:, :, c] = np.clip(rgba[:, :, c] * a + b, 0, 255)
+        v = np.clip(rgba[:, :, c] * a + b, 0, 255)
+        out[:, :, c] = np.where(m, v, rgba[:, :, c])
     return out
 
 
