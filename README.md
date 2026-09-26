@@ -1,8 +1,10 @@
 # whalegirl-pet-kit
 
+**English**: a toolchain for turning one character sheet and a few AI-generated videos into a working [PetPet](https://github.com/stshourenxy-dev/petpet-playbook) desktop-pet pack — chroma key, frame registration, upright normalization, color matching, and layered idle baking.
+
 给 [PetPet](https://github.com/stshourenxy-dev/petpet-playbook) 桌宠框架做素材的工具链：**从一张立绘、几段 AI 生成的视频，做出能跑的宠物包**。
 
-> **用这套工具跑出来的成品**：[鲸鱼娘桌宠](https://github.com/wei125775-lab/whalegirl-deskpet) —— 14 个动作，Claude Code / dsh 双端，含一份 229 行的踩坑文档。想知道这条流水线走到最后长什么样、哪些坑会再撞一次，看它。
+> **用这套工具跑出来的成品**：[鲸鱼娘桌宠](https://github.com/wei125775-lab/whalegirl-deskpet) —— 17 个动作，Claude Code / dsh 双端，含一份 328 行的踩坑文档。想知道这条流水线走到最后长什么样、哪些坑会再撞一次，看它。
 
 仓库里只有脚本和方法，**不含任何美术素材**（立绘和视频都是 AI 生成的，版权归属不清晰，不适合公开）。你拿自己的图跑一遍就能得到自己的宠物。
 
